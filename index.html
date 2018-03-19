@@ -18,9 +18,11 @@
         box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.44);
     }
     .navbar-brand{
+        text-align: center;
     }
     .nav-link{
         color: #000;
+        float: left;
     }
     .nav-link:hover{
         color: #9f6145;
@@ -29,24 +31,24 @@
 
     }
     .group-left{
-
+        float: right;
     }
     .group-right{
-
+        float: left;
     }
 </style>
 
 <body>
 
-    <nav class="navbar navbar-light bg-light nav row">
-        <div class="nav-group-left col">
+    <nav class="navbar navbar-light bg-light nav">
+        <div class="col-4">
             <a class="nav-link group-left active" href="#">Home</a>
             <a class="nav-link group-left" href="#">About</a>
         </div>
-        <a class="navbar-brand col" href="#">
+        <a class="navbar-brand col-3" href="#">
             <img src="asset/logo.png" width="90" height="45" alt="NCRIIT">
         </a>
-        <div class="nav-group-right col">
+        <div class="col-4">
             <a class="nav-link group-right" href="#">Team</a>
             <a class="nav-link group-right" href="#">Sponcers</a>
         </div>

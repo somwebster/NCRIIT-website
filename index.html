@@ -36,6 +36,19 @@
     .group-right{
         float: left;
     }
+    .soon{
+        text-align: center;
+        margin-top: 10rem;
+        font-size: 2rem;
+    }
+    .logo{
+        -webkit-filter: drop-shadow(1px 1px 2px #000);
+        filter: drop-shadow(1px 1px 2px #000);
+    }
+    .logo:hover{
+        -webkit-filter: drop-shadow(0px 0px 0px #000);
+        filter: drop-shadow(0px 0px 0px #000);
+    }
 </style>
 
 <body>
@@ -46,13 +59,15 @@
             <a class="nav-link group-left" href="#">About</a>
         </div>
         <a class="navbar-brand col-3" href="#">
-            <img src="asset/logo.png" width="90" height="45" alt="NCRIIT">
+            <img class="logo" src="asset/logo.png" width="90" height="45" alt="NCRIIT">
         </a>
         <div class="col-4">
             <a class="nav-link group-right" href="#">Team</a>
             <a class="nav-link group-right" href="#">Sponcers</a>
         </div>
     </nav>
+
+    <div class="soon">Coming soon</div>
 
 </body>
 <script src="js/main.js"></script>

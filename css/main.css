@@ -1,0 +1,41 @@
+body{
+    
+}
+.bg-light{
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.44);
+}
+.navbar-brand{
+    text-align: center;
+}
+.nav-link{
+    color: #000;
+    float: left;
+}
+.nav-link:hover{
+    color: #9f6145;
+}
+.nav{
+
+}
+.group-left{
+    float: right;
+}
+.group-right{
+    float: left;
+}
+.content{
+    font-family: monospace;
+    text-align: justify;
+}
+.section-title{
+    text-align: center;
+    margin-top: 45px;
+}
+.logo{
+    -webkit-filter: drop-shadow(1px 1px 2px #000);
+    filter: drop-shadow(1px 1px 2px #000);
+}
+.logo:hover{
+    -webkit-filter: drop-shadow(0px 0px 0px #000);
+    filter: drop-shadow(0px 0px 0px #000);
+}

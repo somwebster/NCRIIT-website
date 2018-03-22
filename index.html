@@ -4,71 +4,84 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="vendors/bootstrap.min.css" />
-        <link rel="shortcut icon" href="asset/logo.png" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+        <link rel="shortcut icon" href="/asset/logo.png" />
 
         <script src="vendors/jquery.min.js"></script>
         <script src="vendors/bootstrap.min.js"></script>
         <script src="vendors/popper.min.js"></script>
+        <!--<link href="css/stylish-portfolio.min.css" rel="stylesheet">-->
     </head>
-
-<style>
-    .bg-light{
-        box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.44);
-    }
-    .navbar-brand{
-        text-align: center;
-    }
-    .nav-link{
-        color: #000;
-        float: left;
-    }
-    .nav-link:hover{
-        color: #9f6145;
-    }
-    .nav{
-
-    }
-    .group-left{
-        float: right;
-    }
-    .group-right{
-        float: left;
-    }
-    .soon{
-        text-align: center;
-        margin-top: 10rem;
-        font-size: 2rem;
-    }
-    .logo{
-        -webkit-filter: drop-shadow(1px 1px 2px #000);
-        filter: drop-shadow(1px 1px 2px #000);
-    }
-    .logo:hover{
-        -webkit-filter: drop-shadow(0px 0px 0px #000);
-        filter: drop-shadow(0px 0px 0px #000);
-    }
-</style>
 
 <body>
 
     <nav class="navbar navbar-light bg-light nav">
-        <div class="col-4">
+        <div class="col-4 links">
+            <a class="nav-link group-left" href="#about">About</a>
             <a class="nav-link group-left active" href="#">Home</a>
-            <a class="nav-link group-left" href="#">About</a>
         </div>
         <a class="navbar-brand col-3" href="#">
             <img class="logo" src="asset/logo.png" width="90" height="45" alt="NCRIIT">
         </a>
-        <div class="col-4">
+        <div class="col-4 links">
             <a class="nav-link group-right" href="#">Team</a>
             <a class="nav-link group-right" href="#">Sponcers</a>
         </div>
+        <div id="nav-toggle">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link group-left active" href="#">Home</a>
+                <a class="nav-link group-left" href="#about">About</a>
+                <a class="nav-link group-right" href="#">Team</a>
+                <a class="nav-link group-right" href="#">Sponcers</a>
+            </div>
+        </div>
     </nav>
+    <div>
+        <img class="img-fluid" src="asset/hero.jpg" />
+    </div>
+    <section class="content col-sm-8 offset-sm-2" id="about">
+        <h3 class="section-title">About NCRIIT</h3>
+        <p>
+        National Conference On Recent Trends of Innovation and Information Techonology(NCRIIT 2018) will be organized on april 20, 2018 by the Department of Information Technology, SRM INSTITUTE OF SCIENCE AND TECHNOLOGY, CHENNAI, India. This conference is all about awakening and appreciating the genius of the society.The panelists will be adorned by people from abroad and experts in their field 
+        This conference will last for one day and it will be held in TRP Auditorium inside SRM IST arena .
+        It will  comprise of more than 100+ participant including scholars and students alike.Thus
+        this conference is a tribute from our organization towards the engineer community and also to encourage innovation and creation beyond expectation    
+        </p>
+        <h3 class="section-title">About SRM</h3> 
+        <p>
+        Education is all about creating an environment of academic freedom, where bright minds meet, discover and learn. One would experience top of the world living and learning experience at SRM.
+
+        SRM Institute of Science and Technology (formerly known as SRM University) - where you have the freedom to take wings.
+        SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
+        Academic Environment
+        Foreign faculty, flexible and dynamic curriculum, exciting research and global connections are the features that set SRM apart. Students have a wide choice of cutting edge programs including nanotechnology, bioinformatics, genetic engineering, remote sensing and GIS, embedded systems or computer forensics to choose from. Most of these courses are offered in close collaboration with foreign universities.      
+        </p>
+    </section>
+    
+    <section class="col-sm-8 offset-sm-2" id="team">
+        
+    </section>
+
+    <section class="col-sm-8 offset-sm-2" id="team">
+        
+    </section>
+
+    <section class="col-sm-8 offset-sm-2" id="team">
+        
+    </section>
+    
 
     <div class="soon">Coming soon</div>
 
 </body>
 <script src="js/main.js"></script>
+<!--<script src="js/stylish-portfolio.js"></script>-->
 </html>

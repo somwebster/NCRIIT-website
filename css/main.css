@@ -25,6 +25,7 @@ body{
 }
 .content{
     font-family: monospace;
+    text-align: justify;
 }
 .section-title{
     text-align: center;

@@ -39,3 +39,6 @@ body{
     -webkit-filter: drop-shadow(0px 0px 0px #000);
     filter: drop-shadow(0px 0px 0px #000);
 }
+.card{
+    margin: 30px;
+}

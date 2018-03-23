@@ -16,20 +16,31 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-light nav">
-        <div class="col-4 links">
-            <a class="nav-link group-left" href="#about">About</a>
-            <a class="nav-link group-left active" href="#">Home</a>
-        </div>
-        <a class="navbar-brand col-3" href="#">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
             <img class="logo" src="asset/logo.png" width="90" height="45" alt="NCRIIT">
         </a>
-        <div class="col-4 links">
-            <a class="nav-link group-right" href="#">Team</a>
-            <a class="nav-link group-right" href="#">Sponsors</a>
+        <div id="links">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">Register</a>
+                </li>
+            </ul>
         </div>
         <div id="nav-toggle">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            <button id="nav-btn" class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
             aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,14 +48,15 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link group-left active" href="#">Home</a>
-                <a class="nav-link group-left" href="#about">About</a>
-                <a class="nav-link group-right" href="#">Team</a>
-                <a class="nav-link group-right" href="#">Sponsors</a>
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#team">Team</a>
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+                <a class="nav-link" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">Register</a>
             </div>
         </div>
     </nav>
-    <div>
+    <div class="hero-image">
         <img class="img-fluid" src="asset/hero.jpg" />
     </div>
     <section class="content col-sm-8 offset-sm-2" id="about">
@@ -68,12 +80,12 @@
     
     <section class="col-sm-8 offset-sm-2" id="team">
         <h3 class="section-title">Team</h3>
-        <div class="row" id="team-holder">
-        </div>
+        <div class="row" id="team-holder"></div>
     </section>
 
-    <section class="col-sm-8 offset-sm-2" id="sponsors">
-        
+    <h3 class="section-title">Sponsors</h3> 
+    <section class="col-sm-10 offset-sm-2" id="sponsors">       
+        <div class="row" id="sponsors-holder"></div>
     </section>
     
 </body>

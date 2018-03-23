@@ -31,6 +31,7 @@ const handleResponsiveness = () => {
     }
 }
 
+// Create cards for team section
 const loadTeam = () => {
     document.querySelector("#team-holder").innerHTML = "";
 
@@ -47,6 +48,7 @@ const loadTeam = () => {
     })
 }
 
+// Create cards for sponsors section
 const loadSponsors = () => {
     document.querySelector("#sponsors-holder").innerHTML = "";
 
@@ -61,13 +63,20 @@ const loadSponsors = () => {
     })
 }
 
+// Toggle between mobile and desktop UI
 window.onresize = event => handleResponsiveness();
 
 window.onload = event => {
     handleResponsiveness()
+
+    // Render team and sponsors
     loadTeam()
     loadSponsors()
 }
 
 // Close mobile-nav menu when a link is clicked
-window.onhashchange = event => document.querySelector("#nav-btn").click();
+window.onhashchange = event => {
+    if(deviceType() == "Mobile"){
+        document.querySelector("#nav-btn").click()
+    }
+}

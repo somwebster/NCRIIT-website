@@ -38,7 +38,6 @@ const handleResponsiveness = () => {
 // Create cards for team section
 const loadTeam = () => {
     document.querySelector("#team-holder").innerHTML = "";
-
     team.map(member => {
         document.querySelector("#team-holder").innerHTML += `
             <div class="card team-card col-sm-3">
@@ -55,7 +54,6 @@ const loadTeam = () => {
 // Create cards for sponsors section
 const loadSponsors = () => {
     document.querySelector("#sponsors-holder").innerHTML = "";
-
     sponsors.map(sponsor => {
         document.querySelector("#sponsors-holder").innerHTML += `
             <div class="card sponsors-card col-sm-3">
@@ -65,6 +63,10 @@ const loadSponsors = () => {
             </div>
         `;
     })
+}
+
+const regis = () => {
+    document.querySelector("#regis-trigger").click()
 }
 
 // Toggle between mobile and desktop UI

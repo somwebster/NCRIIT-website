@@ -60,3 +60,9 @@ section{
 #map{
     padding: 1rem;
 }
+.contact-title{
+    background-color: #101010;
+    color: #fff;
+    margin-bottom: 0px;
+    padding-top: 9px;
+}

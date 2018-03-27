@@ -35,7 +35,8 @@
                     <a class="nav-link" href="#sponsors">Sponsors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">Register</a>
+                    <a onclick="regis()" class="nav-link" href="#">Register</a>
+                    <!--<a class="nav-link" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">Register</a>-->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -55,7 +56,7 @@
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#team">Team</a>
                 <a class="nav-link" href="#sponsors">Sponsors</a>
-                <a class="nav-link" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">Register</a>
+                <a onclick="regis()" class="nav-link" href="#">Register</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </div>
         </div>
@@ -63,23 +64,25 @@
     <div class="hero-image">
         <img class="img-fluid" src="asset/hero.jpg" />
     </div>
-    <section class="content col-sm-8 offset-sm-2" id="about">
-        <h3 class="section-title">About NCRIIT</h3>
-        <p>
-        National Conference On Recent Trends of Innovation and Information Techonology(NCRIIT 2018) will be organized on april 20, 2018 by the Department of Information Technology, SRM INSTITUTE OF SCIENCE AND TECHNOLOGY, CHENNAI, India. This conference is all about awakening and appreciating the genius of the society.The panelists will be adorned by people from abroad and experts in their field 
-        This conference will last for one day and it will be held in TRP Auditorium inside SRM IST arena .
-        It will  comprise of more than 100+ participant including scholars and students alike.Thus
-        this conference is a tribute from our organization towards the engineer community and also to encourage innovation and creation beyond expectation    
-        </p>
-        <h3 class="section-title">About SRM</h3> 
-        <p>
-        Education is all about creating an environment of academic freedom, where bright minds meet, discover and learn. One would experience top of the world living and learning experience at SRM.
+    <section class="content" id="about">
+        <div class="col-sm-8 offset-sm-2" >
+            <h3 class="section-title">About NCRIIT</h3>
+            <p>
+            National Conference On Recent Trends of Innovation and Information Techonology(NCRIIT 2018) will be organized on april 20, 2018 by the Department of Information Technology, SRM INSTITUTE OF SCIENCE AND TECHNOLOGY, CHENNAI, India. This conference is all about awakening and appreciating the genius of the society.The panelists will be adorned by people from abroad and experts in their field 
+            This conference will last for one day and it will be held in TRP Auditorium inside SRM IST arena .
+            It will  comprise of more than 100+ participant including scholars and students alike.Thus
+            this conference is a tribute from our organization towards the engineer community and also to encourage innovation and creation beyond expectation    
+            </p>
+            <h3 class="section-title">About SRM</h3> 
+            <p>
+            Education is all about creating an environment of academic freedom, where bright minds meet, discover and learn. One would experience top of the world living and learning experience at SRM.
 
-        SRM Institute of Science and Technology (formerly known as SRM University) - where you have the freedom to take wings.
-        SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
-        Academic Environment
-        Foreign faculty, flexible and dynamic curriculum, exciting research and global connections are the features that set SRM apart. Students have a wide choice of cutting edge programs including nanotechnology, bioinformatics, genetic engineering, remote sensing and GIS, embedded systems or computer forensics to choose from. Most of these courses are offered in close collaboration with foreign universities.      
-        </p>
+            SRM Institute of Science and Technology (formerly known as SRM University) - where you have the freedom to take wings.
+            SRM Institute of Science and Technology (formerly known as SRM University) is one of the top ranking universities in India with over 38,000 students and more than 2600 faculty across all the campus, offering a wide range of undergraduate, postgraduate and doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities.
+            Academic Environment
+            Foreign faculty, flexible and dynamic curriculum, exciting research and global connections are the features that set SRM apart. Students have a wide choice of cutting edge programs including nanotechnology, bioinformatics, genetic engineering, remote sensing and GIS, embedded systems or computer forensics to choose from. Most of these courses are offered in close collaboration with foreign universities.      
+            </p>
+        </div>
     </section>
     
     <section class="col-sm-8 offset-sm-2" id="team">
@@ -92,12 +95,14 @@
         <div class="row" id="sponsors-holder"></div>
     </section>
 
-    <h3 class="section-title">Contact</h3>
+    <h3 class="section-title contact-title">Contact</h3>
     <section class="row" id="contact">
         <div class="col-sm-6">
             <div class="contact-details">
                 <p>Phone: XXXXXXXXXXX</p>
                 <p>Email: XXXXXXXXXXX</p>
+                <p>Address:  SRM Institute of Science and Technology, Bharathi Salai, 
+                Ramapuram, Chennai, Tamil Nadu 600089</p>
             </div>
         </div>
         <div class="col-sm-6">
@@ -110,3 +115,39 @@
 <script src="js/main.js"></script>
 <!--<script src="js/stylish-portfolio.js"></script>-->
 </html>
+
+
+<input id="regis-trigger" type="hidden" data-toggle="modal" data-target="#exampleModal" />
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Complete your payment through paytm using the following qr code.</p>
+        <div class="col-sm-6 offset-sm-3">
+            <img class="img-fluid" src="asset/qr.png" />
+        </div>
+        <p class="text-center">Or</p>
+        <p class="text-center">use the number: XXXXXXXXXX</p>
+        <p>
+            After you complete your payment, make a note of your paytm transaction ID.
+            Fill out the following google form in which you will have to enter the transaction
+            ID along with your other details.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a  target="_blank" href="https://goo.gl/forms/60HcFAR0zK3q3ILA3">
+            <button type="button" class="btn btn-primary">Google From</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,12 +4,16 @@ const deviceType = () =>
     : 'Desktop';
 
 const team = [
-    {name: "Person 1", role: "Person 1's role", picture: "team.jpg"},
-    {name: "Person 2", role: "Person 2's role", picture: "team.jpg"},
-    {name: "Person 3", role: "Person 3's role", picture: "team.jpg"},
-    {name: "Person 4", role: "Person 4's role", picture: "team.jpg"},
-    {name: "Person 5", role: "Person 5's role", picture: "team.jpg"},
-    {name: "Person 6", role: "Person 6's role", picture: "team.jpg"}
+    {name: "Ranjith Anbalagan", role: "President", picture: "team.jpg"},
+    {name: "Vignesh Prakash", role: "Treasurer", picture: "team.jpg"},
+    {name: "Mohit Sharma", role: "Student Affairs", picture: "team.jpg"},
+    {name: "Suyan Ramesh", role: "Marketing", picture: "team.jpg"},
+    {name: "Bidisha Panja", role: "Sponsorship Head", picture: "team.jpg"},
+    {name: "Balakrishnan", role: "Logistics", picture: "team.jpg"},
+    {name: "Abhishek Uniyal", role: "Technical Head", picture: "team.jpg"},
+    {name: "Anah Veronica", role: "Content Writer", picture: "team.jpg"},
+    {name: "Vijay Saboo", role: "Paper Selection", picture: "team.jpg"},
+    {name: "Aman Vira", role: "Design Team", picture: "team.jpg"}
 ]
 
 const sponsors = [

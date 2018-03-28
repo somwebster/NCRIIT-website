@@ -40,6 +40,7 @@ body{
 }
 .team-card{
     margin: 30px;
+    padding: 0 !important;
 }
 .sponsors-card{
     margin: 10px;

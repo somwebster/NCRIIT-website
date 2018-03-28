@@ -65,9 +65,9 @@ const loadSponsors = () => {
     })
 }
 
-const regis = () => {
-    document.querySelector("#regis-trigger").click()
-}
+const regis = () => document.querySelector("#regis-trigger").click();
+
+const animate = (element, animClass) => document.querySelector(element).classList.add(animClass);
 
 // Toggle between mobile and desktop UI
 window.onresize = event => handleResponsiveness();

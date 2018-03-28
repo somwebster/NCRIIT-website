@@ -9,12 +9,13 @@ body{
 }
 .nav-link{
     color: #000;
+    display: none;
 }
 .nav-link:hover{
     color: #9f6145;
 }
-.nav-extra{
-
+#nav-toggle{
+    display: none;
 }
 .group-left{
     float: right;

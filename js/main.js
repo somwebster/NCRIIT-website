@@ -4,16 +4,16 @@ const deviceType = () =>
     : 'Desktop';
 
 const team = [
-    {name: "Ranjith Anbalagan", role: "President", picture: "team.jpg"},
-    {name: "Vignesh Prakash", role: "Treasurer", picture: "team.jpg"},
-    {name: "Mohit Sharma", role: "Student Affairs", picture: "team.jpg"},
-    {name: "Suyan Ramesh", role: "Marketing", picture: "team.jpg"},
-    {name: "Bidisha Panja", role: "Sponsorship Head", picture: "team.jpg"},
-    {name: "Balakrishnan", role: "Logistics", picture: "team.jpg"},
-    {name: "Abhishek Uniyal", role: "Technical Head", picture: "team.jpg"},
-    {name: "Anah Veronica", role: "Content Writer", picture: "team.jpg"},
-    {name: "Vijay Saboo", role: "Paper Selection", picture: "team.jpg"},
-    {name: "Aman Vira", role: "Design Team", picture: "team.jpg"}
+    {name: "Ranjith Anbalagan", role: "President", picture: "ranjit.jpg"},
+    {name: "Vignesh Prakash", role: "Treasurer", picture: "vignesh prakash.jpg"},
+    {name: "Mohit Sharma", role: "Student Affairs", picture: "mohit sharma.jpg"},
+    {name: "Suyan Ramesh", role: "Marketing", picture: "suyan.jpg"},
+    {name: "Bidisha Panja", role: "Sponsorship Head", picture: "bidisha.jpg"},
+    {name: "Balakrishnan", role: "Logistics", picture: "bala.jpg"},
+    {name: "Abhishek Uniyal", role: "Technical Head", picture: "abhishek.jpg"},
+    {name: "Anah Veronica", role: "Content Writer", picture: "Veronica.jpg"},
+    {name: "Vijay Saboo", role: "Paper Selection", picture: "vijay saboo.jpg"},
+    {name: "Aman Vira", role: "Design Team", picture: "Aman Vira.png"}
 ]
 
 const sponsors = [

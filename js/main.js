@@ -17,12 +17,11 @@ const team = [
 ]
 
 const sponsors = [
-    {name: "Sponsor 1", picture: ""},
-    {name: "Sponsor 2", picture: ""},
-    {name: "Sponsor 3", picture: ""},
-    {name: "Sponsor 4", picture: ""},
-    {name: "Sponsor 5", picture: ""},
-    {name: "Sponsor 6", picture: ""}
+    {name: "Sigree", picture: ""},
+    {name: "Adyar", picture: ""},
+    {name: "Nalli silks", picture: ""},
+    {name: "Yonex", picture: ""},
+    {name: "Sonata", picture: ""}
 ]
 
 const handleResponsiveness = () => {
@@ -66,6 +65,9 @@ const loadSponsors = () => {
 }
 
 const regis = () => document.querySelector("#regis-trigger").click();
+
+
+const video = () => document.querySelector("#video-trigger").click();
 
 const animate = (element, animClass) => document.querySelector(element).classList.add(animClass);
 

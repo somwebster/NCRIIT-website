@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    font-family: Raleway !important;
 }
 .bg-light{
     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.44);
@@ -80,4 +81,47 @@ section{
 }
 .section-img{
 
+}
+.hero-text{
+     position: absolute;
+    margin-top: 5rem;
+    color: #ffffff;
+    font-size: 8rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    text-shadow: 1px 1px 5rem #000000;
+    line-height: 7rem;
+}
+.hero-icon{
+    margin-top: 40px;
+    color: #fff;
+}
+.video{
+}
+.video-inner{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 0 !important;
+}
+.video-header{
+    border-bottom: 0px !important;
+}
+
+/* FOR MOBILE ONLY */
+@media only screen and (max-width: 768px) {
+    .hero-text{
+        position: absolute;
+        margin-top: 3rem;
+        color: #ffffff;
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        text-shadow: 1px 1px 5rem #000000;
+        line-height: 2rem;
+    }
+    .hero-icon{
+        margin-top: 20px;
+        color: #fff;
+    }
 }

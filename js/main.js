@@ -76,7 +76,7 @@ window.onload = event => {
     handleResponsiveness()
 
     // Render team and sponsors
-    // loadTeam()
+    loadTeam()
     loadSponsors()
 }
 

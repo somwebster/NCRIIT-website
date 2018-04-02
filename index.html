@@ -18,6 +18,7 @@
     </head>
 
 <body>
+
     <nav class="navbar fixed-top navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img class="logo" src="asset/logo.png" width="90" height="45" alt="NCRIIT">
@@ -30,9 +31,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
-                </li>-->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#sponsors">Sponsors</a>
                 </li>
@@ -56,7 +57,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" href="#">Home</a>
                 <a class="nav-link" href="#about">About</a>
-                <!--<a class="nav-link" href="#team">Team</a>-->
+                <a class="nav-link" href="#team">Team</a>
                 <a class="nav-link" href="#sponsors">Sponsors</a>
                 <a onclick="regis()" class="nav-link" href="#">Register</a>
                 <a class="nav-link" href="#contact">Contact</a>
@@ -65,7 +66,6 @@
     </nav>
     <div class="hero-image">
         <img class="img-fluid hero" src="asset/hero.jpg" />
-        <!--<img class="tp-kbimg" src="https://demo.goodlayers.com/infinite/homepages/conference/wp-content/uploads/sites/23/2017/05/slider-1.jpg" style="position: absolute; height: 750px; width: 1201px; transform: translate3d(0px, 0px, 0px) scale(1.2, 1.2); transform-origin: 0% 0% 0px;" width="1800" height="1124">-->
     </div>
     <section class="content animated" id="about">
         <div class="col-sm-8 offset-sm-2" >
@@ -88,10 +88,10 @@
         </div>
     </section>
     
-    <!--<section class="col-sm-8 offset-sm-2 animated" id="team">
+    <section class="col-sm-8 offset-sm-2 animated" id="team">
         <h3 class="section-title">Team</h3>
         <div class="row" id="team-holder"></div>
-    </section>-->
+    </section>
 
     <div style="">
         <h3 class="section-title">Sponsors</h3> 
@@ -116,13 +116,17 @@
         <div class="due-credit">
             <!-- <i class="fa fa-code"></i> -->
             Developed by 
-            <a href="#">Recursion</a> 
+            <a href="https://twitter.com/arjunmahishi">Recursion</a>  
         </div>
     </section>    
 
 </body>
 <script src="js/main.js"></script>
-<!--<script src="js/stylish-portfolio.js"></script>-->
+<script>
+    // HTTPS REDIRECT //
+    if (location.protocol !== 'https:' && location.hostname !== 'localhost') 
+        location.replace('https://' + location.href.split('//')[1]);
+</script>
 </html>
 
 
@@ -139,10 +143,7 @@
         </button>
       </div>
       <div class="modal-body">
-            <p>Rules and regulations:</p>
-            <p>
-                
-            </p>
+        <p>Rules and regulations:</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

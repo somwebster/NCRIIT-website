@@ -63,14 +63,16 @@
         </div>
     </nav>
     <div class="hero-image">
-        <div class="hero-text">
+           <div id="particles-js">
+	    <div class="hero-text">
             <p>NCRIIT'18</p>
             <p>SRM IST</p>
             <a onclick="video()" href="#">
                 <i class="fa fa-play-circle hero-icon"></i>
             </a>
         </div>
-        <img class="img-fluid hero" src="asset/hero1.jpg">
+	    </div>  
+       
     </div>
     <section class="content animated" id="about">
         <div class="col-sm-8 offset-sm-2">
@@ -346,7 +348,11 @@
     if (location.protocol !== 'https:' && location.hostname !== 'localhost') 
         location.replace('https://' + location.href.split('//')[1]);
 </script>
-
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS("snowfall", 'assets/particleconfig.json');
+	
+	</script>	
 
 
 <input id="regis-trigger" type="hidden" data-toggle="modal" data-target="#exampleModal">

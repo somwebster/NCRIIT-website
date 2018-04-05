@@ -2,7 +2,7 @@
         <title>NCRIIT</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/vendors/bootstrap.min.css">
         <link rel="shortcut icon" href="/asset/logo.png">
@@ -29,7 +29,11 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-light bg-light" style="
+    border:  black;
+    border-style: outset;
+    border-width:  4px;
+">
         <a class="navbar-brand" href="#">
             <img class="logo" src="asset/logo.png" width="90" height="45" alt="NCRIIT">
         </a>
@@ -101,11 +105,11 @@
 	    <div class="hero-text">
             <p>NCRIIT'18</p>
             <p>SRM IST</p>
-	 <div class="typed">This pen is
-	  <span
-	     class="txt-rotate"
-	     data-period="2000"
-	     data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+	 <div class="typed" style="
+    margin-top: 39px;
+    margin-bottom: 3px;
+    font-size: 2.8rem;
+"><span class="txt-rotate" data-period="2000" data-rotate="[ &quot;National.&quot;, &quot;Conference.&quot;, &quot;On JS.&quot;, &quot;Research.&quot;, &quot;fun!&quot; ]"><span class="wrap">nerdy.</span></span>
 	</div>
 
             <a onclick="video()" href="#">
@@ -114,10 +118,14 @@
         </div>
 		   <!--img class="img-fluid hero" src="asset/hero1.jpg" /-->
 	 
-  </div>     
+  <canvas class="particles-js-canvas-el" width="1265" height="704" style="width: 100%; height: 100%;"></canvas></div>     
     </div>
 	<div id="particles-js"></div>	
-    <section class="content animated" id="about">
+    <section class="content animated" id="about" style="
+    border:  black;
+    border-style:  outset;
+    border-width:  5px;
+">
         <div class="col-sm-8 offset-sm-2">
             <h3 class="section-title">About NCRIIT</h3>
             <p>
@@ -137,8 +145,15 @@
             </p>
         </div>
     </section>
-    <hr>
-    <section class="col-sm-8 offset-sm-2 animated" id="team">
+    
+    <section class="col-sm-12 offset-sm-2 animated" id="team" style="
+    text-color: white;
+    margin-right: 0;
+    background:  black;
+    width:  100%;
+    margin-left: 0px;
+    color:  white;
+">
         <h3 class="section-title">Team</h3>
         <div class="row" id="team-holder">
             <div class="card team-card col-sm-3">
@@ -286,7 +301,7 @@
                     </div>
                 </div>
             </div>
-   	 </div></section>
+   	 </section>
 	 <ul class="timeline">
 
 	<!-- Item 1 -->
@@ -498,4 +513,5 @@
       </div>
     </div>
   </div>
-</div></body></html>
+</div>
+<style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid #666 }</style></body></html>
